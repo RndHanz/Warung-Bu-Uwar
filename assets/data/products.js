@@ -3,7 +3,7 @@ const products = [
     id: 1,
     name: "Minyak Goreng Minyakita",
     price: 15000,
-    image: "assets/images/minyak_kita.jpg",
+    image: "./assets/images/Minyak-Kita.jpeg",
   },
   {
     id: 2,
