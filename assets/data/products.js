@@ -1,7 +1,7 @@
 const products = [
   {
     id: 1,
-    name: "Minya kita 1KG",
+    name: "Minyak kita - 1 Liter",
     price: 18000,
     image: "./assets/images/Minyak-Kita.jpeg",
   },
@@ -73,8 +73,8 @@ const products = [
   },
   {
     id: 13,
-    name: "Minya kita 2KG",
-    price: 28000,
+    name: "Minyak kita - 2 Liter",
+    price: 36000,
     image: "./assets/images/Minyak-Kita.jpeg",
   },
   {
@@ -131,5 +131,102 @@ const products = [
     price: 11000,
     image: "./assets/images/Susu_Beruang_kaleng.jpeg",
   },
+  {
+    id: 22,
+    name: "Nipis Madu",
+    price: 5000,
+    image: "./assets/images/Nipis_Madu.jpg",
+  },
+  {
+    id: 23,
+    name: "Telur Ayam Kampung - (1 Kg)",
+    price: 32000,
+    image: "./assets/images/Telur.jpg",
+  },
+  {
+    id: 24,
+    name: "Telur Ayam Kampung (1/2 Kg)",
+    price: 16000,
+    image: "./assets/images/telur_setengah.jpg",
+  },
+  {
+    id: 25,
+    name: "Telur Ayam Kampung (1/4 Kg)",
+    price: 8500,
+    image: "./assets/images/Telur_seperapat.jpg",
+  },
+  {
+    id: 26,
+    name: "Minyak Goreng curah - (1 kg)",
+    price: 20000,
+    image: "./assets/images/Minyak_goreng_1kg.jpeg",
+  },
+  {
+    id: 27,
+    name: "Minyak Goreng curah - (1/2 kg)",
+    price: 10000,
+    image: "./assets/images/Minyak_goreng_setengah.jpeg",
+  },
+  {
+    id: 28,
+    name: "Minyak Goreng curah - (1/4 kg)",
+    price: 5000,
+    image: "./assets/images/Minyak_goreng_seperapat.jpeg",
+  },
+  {
+    id: 29,
+    name: "Mie Kuah (Indomei, Sedap)",
+    price: 3500,
+    image: "./assets/images/Mie_Kuah.jpeg",
+  },
+  {
+    id: 30,
+    name: "Sarimi (Isi 2)",
+    price: 4500,
+    image: "./assets/images/Mie_isi_2.jpeg",
+  },
+  {
+    id: 31,
+    name: "Bihun 5 Daun (1kg) Isi 14",
+    price: 28000,
+    image: "./assets/images/Bihun_5_daun.jpg",
+  },
+  {
+    id: 32,
+    name: "Bihun 5 Daun (1/2 Kg) - Isi 7",
+    price: 14000,
+    image: "./assets/images/Bihun_5_daun.jpg",
+  },
+  {
+    id: 33,
+    name: "Bihun 5 Daun (1/4 Kg) Isi 4",
+    price: 8000,
+    image: "./assets/images/Bihun_5_daun.jpg",
+  },
+  {
+    id: 34,
+    name: "POP Mie",
+    price: 6000,
+    image: "./assets/images/POP_MIE.jpg",
+  },
+  {
+    id: 35,
+    name: "Terigu  (1kg)",
+    price: 9000,
+    image: "./assets/images/Terigu_1kg.jpg",
+  },
+  {
+    id: 36,
+    name: "Terigu (1/2 kg)",
+    price: 5000,
+    image: "./assets/images/Terigu_1kg.jpg",
+  },
+  {
+    id: 37,
+    name: "Terigu (1/4 kg)",
+    price: 3000,
+    image: "./assets/images/Terigu_1kg.jpg",
+  },
+
   // Tambahkan produk lain di sini
 ];
