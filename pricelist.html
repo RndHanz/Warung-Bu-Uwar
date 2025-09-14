@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warung Bu Uwar - Pricelist</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="assets/images/logo.png" alt="Logo Warung Bu Uwar" />
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Beranda</a>
+          <a href="pricelist.html">Pricelist</a>
+          <a href="about.html">Tentang Kami</a>
+        </div>
+        <div class="nav-actions">
+          <a href="troli.html" class="troli-icon">🛒</a>
+          <button class="login-btn">Masuk</button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="pricelist-page">
+      <h2>Daftar Harga Barang</h2>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Cari barang..." />
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </main>
+
+    <script src="assets/data/products.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
