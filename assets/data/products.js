@@ -44,7 +44,7 @@ const products = [
   {
     id: 8,
     name: "Kecap Guna",
-    price: 8000,
+    price: 13000,
     image: "./assets/images/Kecap_Guna.jpg",
   },
   {
