@@ -31,14 +31,14 @@ const products = [
   },
   {
     id: 6,
-    name: "Kecap Nasional",
-    price: 14000,
+    name: "Kecap Nasional Refil",
+    price: 17000,
     image: "./assets/images/Kecap_Nasional.jpg",
   },
   {
     id: 7,
     name: "Kecap Nasional Botol",
-    price: 17000,
+    price: 19000,
     image: "./assets/images/Kecap_Nasional_Botol.jpg",
   },
   {
@@ -49,7 +49,7 @@ const products = [
   },
   {
     id: 9,
-    name: "Sasa 6k",
+    name: "Sasa 1 Ons",
     price: 6000,
     image: "./assets/images/Sasa6k.jpg",
   },
@@ -68,7 +68,7 @@ const products = [
   {
     id: 12,
     name: "Sasa Besar",
-    price: 12000,
+    price: 14000,
     image: "./assets/images/Sasa.jpg",
   },
   {
