@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warung Bu Uwar - Keranjang</title>
+    <title>Keranjang Belanja - Warung Bu Uwar</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -14,63 +17,42 @@
             <img src="assets/images/logo.png" alt="Logo Warung Bu Uwar" />
           </a>
         </div>
-        <button class="hamburger" aria-label="Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
         <div class="nav-links">
           <a href="index.html">Beranda</a>
           <a href="pricelist.html">Pricelist</a>
           <a href="about.html">Tentang Kami</a>
         </div>
         <div class="nav-actions">
-          <a href="troli.html" class="troli-icon">🛒</a>
+          <a href="troli.html" class="troli-icon active">🛒</a>
           <button class="login-btn">Masuk</button>
         </div>
       </nav>
     </header>
 
     <main class="troli-page">
-      <h2>Keranjang Belanja</h2>
-      <div id="troliItems"></div>
-      <div class="troli-summary">
-        <h3>Total Harga: <span id="totalPrice">Rp 0</span></h3>
-        <button id="checkoutBtn">Bayar</button>
-      </div>
-    </main>
+      <div class="container">
+        <div class="troli-header">
+          <h2>Keranjang Belanja Anda</h2>
+          <p>Silakan periksa kembali produk yang akan dibayar.</p>
+        </div>
 
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <img src="assets/images/logo.png" alt="Logo Warung Bu Uwar" />
-          <p>Kebutuhan harian Anda, prioritas kami.</p>
-          <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
+        <div class="troli-content">
+          <div class="troli-items" id="troliItems">
+            <p class="empty-troli">Keranjangmu kosong.</p>
+          </div>
+
+          <div class="troli-summary">
+            <h3>Ringkasan Belanja</h3>
+            <div class="summary-details">
+              <p>Total Produk:</p>
+              <p class="summary-total" id="totalPrice">Rp 0</p>
+            </div>
+            <button id="checkoutBtn" class="checkout-btn">Bayar Sekarang</button>
+            <a href="pricelist.html" class="continue-shopping">Lanjut Belanja</a>
           </div>
         </div>
-        <div class="footer-links">
-          <h3>Jelajahi</h3>
-          <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="pricelist.html">Pricelist</a></li>
-            <li><a href="about.html">Tentang Kami</a></li>
-            <li><a href="troli.html">Keranjang</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h3>Hubungi Kami</h3>
-          <p>Jalan Kenangan Indah No. 123</p>
-          <p>Jakarta, Indonesia</p>
-          <p>Telepon: 0812-3456-7890</p>
-          <p>Email: info@warungbuuwar.com</p>
-        </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 Warung Bu Uwar. Semua hak cipta dilindungi.</p>
-      </div>
-    </footer>
+    </main>
 
     <script src="js/script.js"></script>
   </body>

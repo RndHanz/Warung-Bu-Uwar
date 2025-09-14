@@ -503,6 +503,135 @@ body {
   transition: 0.4s;
 }
 
+/* Tata Letak Halaman Troli */
+.troli-page {
+  padding: 40px 20px;
+  min-height: 70vh;
+}
+.troli-page .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.troli-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.troli-header h2 {
+  font-size: 2.5em;
+  color: var(--primary-color);
+}
+.troli-header p {
+  color: #bdc3c7;
+}
+
+.troli-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.troli-items {
+  flex: 2;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.empty-troli {
+  text-align: center;
+  color: #bdc3c7;
+  font-style: italic;
+  padding: 20px;
+}
+
+.troli-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #4a6273;
+}
+
+.troli-item:last-child {
+  border-bottom: none;
+}
+
+.troli-item .item-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.troli-item .item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.troli-item .item-name {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.troli-item .item-price {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Ringkasan Troli */
+.troli-summary {
+  flex: 1;
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  height: fit-content;
+}
+.troli-summary h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.summary-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.summary-details .summary-total {
+  color: var(--primary-color);
+}
+
+.checkout-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.checkout-btn:hover {
+  background-color: #ff6600;
+}
+
+.continue-shopping {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+.continue-shopping:hover {
+  color: var(--primary-color);
+}
+
 /* Hamburger active state */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 6px);
