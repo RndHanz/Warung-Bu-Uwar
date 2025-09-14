@@ -2,26 +2,26 @@ const products = [
   {
     id: 1,
     name: "Minyak Goreng Minyakita",
-    price: 15000,
+    price: 20000,
     image: "./assets/images/Minyak-Kita.jpeg",
   },
   {
     id: 2,
-    name: "Susu Milkita Cokelat",
-    price: 2500,
-    image: "assets/images/susu_milkita.jpg",
+    name: "Susu Kotak Indomilk",
+    price: 3500,
+    image: "./assets/images/Susu_Indomilk.jpg",
   },
   {
     id: 3,
-    name: "Beras Pulen 5kg",
-    price: 65000,
-    image: "assets/images/beras.jpg",
+    name: "Beras Pulen 1L",
+    price: 13000,
+    image: "./assets/images/Beras_Pulen.jpg",
   },
   {
     id: 4,
-    name: "Mie Instan Indomie",
-    price: 3000,
-    image: "assets/images/indomie.jpg",
+    name: "Indomie Goreng",
+    price: 4000,
+    image: "./assets/images/Indomie_Goreng.jpeg",
   },
   // Tambahkan produk lain di sini
 ];

@@ -93,4 +93,24 @@ document.addEventListener("DOMContentLoaded", () => {
   if (troliItemsContainer) {
     renderTroli(); // Tampilkan keranjang saat halaman Troli dimuat
   }
+
+  // Hamburger menu logic
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const navActions = document.querySelector(".nav-actions");
+  if (hamburger && navLinks && navActions) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("mobile-active");
+      navActions.classList.toggle("mobile-active");
+    });
+    // Optional: close menu on link click (mobile)
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navLinks.classList.remove("mobile-active");
+        navActions.classList.remove("mobile-active");
+      });
+    });
+  }
 });

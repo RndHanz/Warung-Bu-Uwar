@@ -389,6 +389,7 @@ body {
 .contact-info p {
   margin: 5px 0;
 }
+
 /* --- Footer --- */
 .main-footer {
   background-color: var(--secondary-color);
@@ -476,4 +477,151 @@ body {
 .footer-bottom p {
   font-size: 0.9em;
   color: #bdc3c7;
+}
+
+/* --- Hamburger Navbar --- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  background: none;
+  border: none;
+}
+
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 4px 0;
+  background: var(--primary-color);
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+/* Hamburger active state */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .about-section,
+  .about-section.reverse {
+    flex-direction: column !important;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+  .navbar .logo img {
+    height: 40px;
+  }
+  .hero-content h1 {
+    font-size: 2em;
+  }
+  .about-header h2,
+  .pricelist-header h2 {
+    font-size: 1.5em;
+  }
+  .about-content h3,
+  .contact-info h3 {
+    font-size: 1.2em;
+  }
+  .about-section,
+  .about-section.reverse {
+    padding: 12px;
+  }
+  .contact-info {
+    padding: 15px;
+  }
+  .main-footer {
+    padding: 30px 10px 10px;
+  }
+  .footer-brand img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar .nav-links,
+  .navbar .nav-actions {
+    display: none;
+  }
+  .navbar .nav-links.mobile-active,
+  .navbar .nav-actions.mobile-active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100vw;
+    background: var(--secondary-color);
+    z-index: 1000;
+    padding: 20px 0 10px 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s;
+  }
+  .navbar .nav-links.mobile-active a,
+  .navbar .nav-actions.mobile-active .troli-icon,
+  .navbar .nav-actions.mobile-active .login-btn {
+    margin: 10px 0;
+    font-size: 1.1em;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .home-hero {
+    height: auto;
+    min-height: 60vh;
+    padding: 40px 0 30px 0;
+  }
+  .hero-content {
+    padding: 10px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .pricelist-page,
+  .about-page {
+    padding: 18px 5px;
+  }
+  .about-page .container,
+  .pricelist-page .container {
+    padding: 0 2px;
+  }
+  .footer-container {
+    padding: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
