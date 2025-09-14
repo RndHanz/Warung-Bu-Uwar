@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warung Bu Uwar - Pricelist</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -16,7 +19,7 @@
         </div>
         <div class="nav-links">
           <a href="index.html">Beranda</a>
-          <a href="pricelist.html">Pricelist</a>
+          <a href="pricelist.html" class="active">Pricelist</a>
           <a href="about.html">Tentang Kami</a>
         </div>
         <div class="nav-actions">
@@ -27,11 +30,17 @@
     </header>
 
     <main class="pricelist-page">
-      <h2>Daftar Harga Barang</h2>
-      <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Cari barang..." />
+      <div class="container">
+        <div class="pricelist-header">
+          <h2>Daftar Harga Barang</h2>
+          <p>Temukan semua kebutuhan warungmu di sini. Cepat, lengkap, dan harga terjangkau.</p>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Cari nama barang..." />
+            <button class="search-btn">🔍</button>
+          </div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
       </div>
-      <div class="product-grid" id="productGrid"></div>
     </main>
 
     <script src="assets/data/products.js"></script>

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warung Bu Uwar - Beranda</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -15,7 +18,7 @@
           </a>
         </div>
         <div class="nav-links">
-          <a href="index.html">Beranda</a>
+          <a href="index.html" class="active">Beranda</a>
           <a href="pricelist.html">Pricelist</a>
           <a href="about.html">Tentang Kami</a>
         </div>
@@ -26,10 +29,15 @@
       </nav>
     </header>
 
-    <main class="home-page">
-      <h1>Selamat Datang di Warung Bu Uwar</h1>
-      <p>Menyediakan kebutuhan sehari-hari dengan harga terjangkau.</p>
-      <a href="pricelist.html" class="cta-button">Lihat Pricelist</a>
+    <main class="home-hero">
+      <div class="hero-content">
+        <h1>Selamat Datang di Warung Bu Uwar</h1>
+        <p>Menyediakan kebutuhan harian terbaik dengan harga jujur. Kualitas terjamin, belanja nyaman!</p>
+        <div class="hero-buttons">
+          <a href="pricelist.html" class="cta-button primary">Lihat Pricelist</a>
+          <a href="#" class="cta-button secondary">Tentang Kami</a>
+        </div>
+      </div>
     </main>
 
     <script src="js/script.js"></script>

@@ -1,133 +1,391 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+/* Palet Warna */
+:root {
+  --primary-color: #ff8c00; /* Oranye */
+  --secondary-color: #2c3e50; /* Hitam Gelap (Hampir Hitam) */
+  --text-light: #ecf0f1;
+  --text-dark: #34495e;
+  --background-dark: #1c2833;
+  --background-light: #f4f4f4;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* --- Navbar --- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
-  color: white;
+  background-color: var(--secondary-color);
+  padding: 15px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo img {
-  height: 40px;
+  height: 50px;
 }
 
 .navbar .nav-links a {
-  color: white;
+  color: var(--text-light);
   text-decoration: none;
-  margin: 0 15px;
-  font-size: 18px;
+  margin: 0 20px;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links a.active {
+  color: var(--primary-color);
 }
 
 .navbar .nav-actions .troli-icon {
-  font-size: 24px;
-  margin-right: 15px;
+  font-size: 1.5em;
+  margin-right: 20px;
+  color: var(--text-light);
   text-decoration: none;
 }
 
 .navbar .nav-actions .login-btn {
-  background-color: #555;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-light);
   border: none;
-  padding: 8px 15px;
+  padding: 10px 25px;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-.home-page,
-.pricelist-page,
-.troli-page {
-  padding: 20px;
+.navbar .nav-actions .login-btn:hover {
+  background-color: #ff6600;
+}
+
+/* --- Hero Section (Beranda) --- */
+.home-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Sesuaikan dengan tinggi navbar */
   text-align: center;
+  background-image: url("assets/images/warung-background.jpg"); /* Ganti dengan gambar yang sesuai */
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.pricelist-page .search-container {
+.home-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Overlay hitam untuk teks lebih jelas */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5em;
+  font-weight: 700;
   margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.pricelist-page .search-container input {
-  width: 80%;
-  padding: 10px;
-  font-size: 16px;
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.6;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+.hero-buttons .cta-button {
+  text-decoration: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1em;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.hero-buttons .cta-button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-buttons .primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.hero-buttons .primary:hover {
+  background-color: #ff6600;
+}
+
+.hero-buttons .secondary {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.hero-buttons .secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Tambahkan gaya untuk halaman lain di sini */
+/* ... (Gaya untuk pricelist.html, troli.html, dll. yang sudah ada sebelumnya) ... */
+/* Palet Warna dan Font yang Sama seperti Beranda */
+:root {
+  --primary-color: #ff8c00; /* Oranye */
+  --secondary-color: #2c3e50; /* Hitam Gelap */
+  --text-light: #ecf0f1;
+  --text-dark: #34495e;
+  --background-dark: #1c2833;
+  --background-light: #f4f4f4;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* --- Tata Letak Halaman Pricelist --- */
+.pricelist-page {
+  padding: 40px 20px;
+}
+
+.pricelist-page .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.product-card {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 15px;
+.pricelist-header {
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.pricelist-header h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.pricelist-header p {
+  font-size: 1.1em;
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+/* --- Search Bar --- */
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  padding: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.search-container input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 12px 20px;
+  font-size: 1em;
+  color: var(--text-light);
+  outline: none;
+}
+
+.search-container input::placeholder {
+  color: #95a5a6;
+}
+
+.search-container .search-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.2em;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+/* --- Grid Produk --- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .product-card img {
   width: 100%;
-  height: 150px;
+  height: 180px;
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .product-card h3 {
-  margin: 10px 0;
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--text-light);
 }
 
 .product-card .price {
-  font-size: 1.2em;
-  color: #4caf50;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .product-card .add-to-cart-btn {
-  background-color: #4caf50;
+  background-color: var(--primary-color);
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 25px;
+  border-radius: 50px;
   cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
 }
 
-.troli-page #troliItems {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.product-card .add-to-cart-btn:hover {
+  background-color: #ff6600;
+}
+/* Palet Warna dan Font yang Sama */
+:root {
+  --primary-color: #ff8c00; /* Oranye */
+  --secondary-color: #2c3e50; /* Hitam Gelap */
+  --text-light: #ecf0f1;
+  --text-dark: #34495e;
+  --background-dark: #1c2833;
+  --background-light: #f4f4f4;
 }
 
-.troli-item {
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+/* ... (Kode CSS untuk Navbar) ... */
+
+/* --- Tata Letak Halaman Tentang Kami --- */
+.about-page {
+  padding: 40px 20px;
+}
+
+.about-page .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.about-header p {
+  font-size: 1.1em;
+  color: var(--text-light);
+}
+
+.about-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  gap: 40px;
+  margin-bottom: 60px;
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.troli-summary {
-  text-align: right;
-  margin-top: 20px;
+.about-section.reverse {
+  flex-direction: row-reverse;
 }
 
-#checkoutBtn {
-  background-color: #f44336;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  font-size: 18px;
-  border-radius: 5px;
-  cursor: pointer;
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+  flex: 2;
+}
+
+.about-content h3 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info h3 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 5px 0;
 }
