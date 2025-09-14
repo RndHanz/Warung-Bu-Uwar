@@ -77,5 +77,59 @@ const products = [
     price: 28000,
     image: "./assets/images/Minyak-Kita.jpeg",
   },
+  {
+    id: 14,
+    name: "Sprit - Fanta - Coca Cola (Kecil)",
+    price: 4000,
+    image: "./assets/images/Sprit_fanta_cocacola.jpg",
+  },
+  {
+    id: 15,
+    name: "Sprit - Fanta - Coca Cola (Besar)",
+    price: 6000,
+    image: "./assets/images/Sprit_fanta_cocacola_besar.jpg",
+  },
+  {
+    id: 16,
+    name: "Milku - Botol",
+    price: 4000,
+    image: "./assets/images/Milku_Botol.jpeg",
+  },
+  {
+    id: 17,
+    name: "Ultra Milk (Kecil)",
+    price: 3500,
+    image: "./assets/images/Ultra_Milk_Kecil.jpeg",
+  },
+  {
+    id: 18,
+    name: "Ultra Milk (Besar)",
+    price: 6000,
+    image: "./assets/images/Ultra_Milk_Besar.jpeg",
+  },
+  {
+    id: 19,
+    name: "Minuman Kaleng (Pocari, Larutan, Sprit)",
+    price: 7000,
+    image: "./assets/images/Minuman_Kaleng.jpeg",
+  },
+  {
+    id: 20,
+    name: "Teh Pucuk Harum",
+    price: 4000,
+    image: "./assets/images/Pucuk.jpg",
+  },
+  {
+    id: 21,
+    name: "Yakult",
+    price: 2500,
+    image: "./assets/images/Yakul.jpg",
+  },
+  {
+    id: 21,
+    name: "Susu Bear Brand / Beruang",
+    price: 11000,
+    image: "./assets/images/Susu_Beruang_kaleng.jpeg",
+  },
   // Tambahkan produk lain di sini
 ];
