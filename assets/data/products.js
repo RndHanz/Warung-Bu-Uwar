@@ -1,8 +1,8 @@
 const products = [
   {
     id: 1,
-    name: "Minyak Goreng Minyakita",
-    price: 20000,
+    name: "Minya kita 1KG",
+    price: 18000,
     image: "./assets/images/Minyak-Kita.jpeg",
   },
   {
@@ -70,6 +70,12 @@ const products = [
     name: "Sasa Besar",
     price: 12000,
     image: "./assets/images/Sasa.jpg",
+  },
+  {
+    id: 13,
+    name: "Minya kita 2KG",
+    price: 28000,
+    image: "./assets/images/Minyak-Kita.jpeg",
   },
   // Tambahkan produk lain di sini
 ];
